@@ -9177,7 +9177,9 @@ textarea {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #ccc; }
+  background-color: #ccc; 
+opacity: 75%;}
+
   .hero, .hero > .container > .row {
     height: 100vh;
     min-height: 780px; }
@@ -9224,7 +9226,7 @@ textarea {
 
 .section {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   position: relative; }
   .section .subheading {
     display: inline-block;
@@ -9303,7 +9305,7 @@ textarea {
 
 .features-slider-wrap {
   position: relative;
-  margin-bottom: -250px; }
+  margin-bottom: -350px; }
   .features-slider-wrap .tns-inner {
     padding-bottom: 100px; }
   .features-slider-wrap .tns-controls {
