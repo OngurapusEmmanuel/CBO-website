@@ -6,6 +6,11 @@ use PHPMailer\PHPMailer\PHPMailer.php;
 use PHPMailer\PHPMailer\Exception.php;
 use PHPMailer\PHPMailer\SMTP.php;
 
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
  // Initialize PHPMailer
     $mail = new PHPMailer(true);
 
@@ -24,13 +29,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'ikwedetemmanuel@gmail.com';
-    $mail->Password = 'Emmerhnuel@4';
+    $mail->Username = 'emmanuelongurapus@gmail.com';
+    $mail->Password = 'sharonamoit';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use 'tls' or 'ssl'
     $mail->Port = 587; // Check your email provider for the correct port
 
         // Recipients
-        $mail->setFrom('ikwedetemmanuel@gmail.com');
+        $mail->setFrom('emmanuelongurapus@gmail.com', 'Contact form');
         $mail->addAddress('emmanuelongurapus@gmail.com');
 
         // Content
@@ -41,7 +46,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Send the email
         $mail->send();
 
-           // echo '<script>alert("Submitted successfully");</script>';
+        
+
+     
+
+           echo '<script>alert("Submitted successfully");</script>';
     } catch (Exception $e) {
         echo "Error sending the message. Please try again later. Error: {$mail->ErrorInfo}";
     }
