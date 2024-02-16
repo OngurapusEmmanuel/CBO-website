@@ -52,9 +52,9 @@
 						</div>
 						<div class="col-8 text-center">
 							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li class="has-children ">
-									<a href="projects.html">projects</a>
+									<a href="projects.php">projects</a>
 									<ul class="dropdown">
 										<li><a href="#">Menu One</a></li>
 										<li><a href="#">Menu Two</a></li>
@@ -68,8 +68,8 @@
 										</li>
 									</ul>
 								</li>
-								<li><a href="about.html">About</a></li>
-								<li class="active"><a href="news.html">News</a></li>
+								<li><a href="about.php">About</a></li>
+								<li class="active"><a href="news.php">News</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
@@ -213,171 +213,8 @@
 
 
 
-	<div class="section sec-instagram pb-0">
-		<div class="container mb-5">
-			<div class="row align-items-center">
-				<div class="col-lg-3" data-aos="fade-up">
-					<span class="subheading mb-3">Instagram</span>
-					<h2 class="heading">We Are In Instagram</h2>
-				</div>
-				<div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-					<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, aperiam sint voluptatum? Molestiae debitis, ipsum, rem ipsa voluptatum cupiditate quaerat!</p>
-				</div>
-			</div>
-		</div>
+	<?php 
 
-		<div class="instagram-slider-wrap" data-aos="fade-up" data-aos-delay="200">
-			<div class="instagram-slider" id="instagram-slider">
+include "footer.php"; 
 
-				<div class="item">
-					<a class="instagram-item">
-						<span class="icon-instagram"></span>
-						<img src="images/img_v_8-min.jpg" alt="Image" class="img-fluid">		
-					</a>
-				</div>
-
-				<div class="item">
-					<a class="instagram-item">
-						<span class="icon-instagram"></span>
-						<img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid">		
-					</a>
-				</div>
-
-				<div class="item">
-					<a class="instagram-item">
-						<span class="icon-instagram"></span>
-						<img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid">		
-					</a>
-				</div>
-
-				<div class="item">
-					<a class="instagram-item">
-						<span class="icon-instagram"></span>
-						<img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid">		
-					</a>
-				</div>
-
-				<div class="item">
-					<a class="instagram-item">
-						<span class="icon-instagram"></span>
-						<img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid">		
-					</a>
-				</div>
-
-				<div class="item">
-					<a class="instagram-item">
-						<span class="icon-instagram"></span>
-						<img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid">		
-					</a>
-				</div>
-
-				<div class="item">
-					<a class="instagram-item">
-						<span class="icon-instagram"></span>
-						<img src="images/img_v_7-min.jpg" alt="Image" class="img-fluid">		
-					</a>
-				</div>
-
-
-			</div>
-		</div>
-
-	</div>
-
-	
-	<div class="site-footer">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-					<div class="widget">
-						<h3>Navigation</h3>
-						<ul class="list-unstyled float-left links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About us</a></li>
-							<li><a href="contact.html">Contact us</a></li>
-							<li><a href="projects.html">projects</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-					<div class="widget">
-						<h3>Projects</h3>
-						<ul class="list-unstyled float-left links">
-							<li><a href="projects.html">Nurturing sustainable peace </a></li>
-							<li><a href="projects.html">Environmental awareness campaigns</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-					<div class="widget">
-						<h3>connect</h3>
-						<ul class="list-unstyled float-left links">
-							<li><a href="https://www.facebook.com/EmmanuelOng">facebook</a></li>
-							<li><a href="https://www.instagram.com/EmmerhnuelOngurerhpus/">Instagram</a></li>
-							<li><a href="https://www.linkedin.com/EmmanuelOngurapus">linkedin</a></li>
-							<li><a href="wa.link/pt9w9k">whatsapp</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-				
-
-
-				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
-					<div class="widget">
-						<h3>Contact</h3>
-						<address>P.O.BOX 29817-00202,KNH,NAIROBI
-							</address>
-						<ul class="list-unstyled links mb-4">
-							<li><a href="tel:0115280583">0115280583</a></li>
-							<li><a href="info@bethelintellectualdisabilitycentre.org">info@bethelintellectualdisabilitycentre.org</a></li>
-						</ul>
-
-					
-
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-3 -->
-
-			</div> <!-- /.row -->
-
-
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-					<p class="copyright">Copyright &copy; All Rights Reserved @ BID-C  by <a href="">Young Solutions</a> </p>
-				</div>
-			</div>
-		</div> <!-- /.container -->
-	</div> <!-- /.site-footer -->
-
-
-
-
-
-
-
-
-
-	<!-- Preloader -->
-	<div id="overlayer"></div>
-	<div class="loader">
-		<div class="spinner-border text-primary" role="status">
-			<span class="visually-hidden">Loading...</span>
-		</div>
-	</div>
-
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/tiny-slider.js"></script>
-
-	<script src="js/flatpickr.min.js"></script>
-	<script src="js/glightbox.min.js"></script>
-
-
-	<script src="js/aos.js"></script>
-	<script src="js/navbar.js"></script>
-	<script src="js/counter.js"></script>
-	<script src="js/custom.js"></script>
-</body>
-</html>
+?>
