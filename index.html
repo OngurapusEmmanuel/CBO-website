@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+
+<head
+>	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="images/me.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@400;700&display=swap"
+		rel="stylesheet">
+
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>BID-C</title>
+
+	  <style>
+ 
+  .container-1{
+    position: relative;
+    width: 100%;
+    height: 40px; /* Adjust height as needed */
+   /* background-image: url('background.jpg'); *//* Replace 'background.jpg' with your background image path */
+   /*background-color: linen;*/
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 10px; /* Adjust top padding as needed */
+  }
+  #btn-donate:hover{
+  	position: relative;
+  	background-color: #e9ecef;
+    border: 1px solid #2C8CF4;
+  	border-width: 2px;
+  	border-radius: 4px;
+  	box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.25) !important;
+  	color: green;
+  	font-size: 23px;
+  	font-style: bold;
+  	transform: translate(0%, -20%);
+  	cursor: pointer;
+  	font-family: serif;
+
+
+  }
+  /*.donate-button-1{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4AD295; 
+    color: white;
+    padding: 5px 10px;
+    font-size: 23px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }*/
+ /* .description-1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+  }*/
+  .modal-1{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal-content-1 {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .close-1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+		<div class="container">
+			<div class="menu-bg-wrap">
+				<div class="site-navigation">
+					<div class="row g-0 align-items-center">
+						<div class="col-2">
+							<a href="index.php">
+								<img alt="Bethel Intellectual Disability Centre" src="images/me.png" height="80px">
+
+							</a>
+						</div>
+						<div class="col-8 text-center">
+							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
+								<li class="active"><a href="index.php">Home</a></li>
+								<!-- <li><a href="projects.html">projects</a></li>	 -->
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="login.html">dashboard</a></li>
+							</ul>
+						</div>
+						<div class="col-2 text-end">
+							<a href="#"
+								class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
+								<span></span>
+							</a>
+
+							<a href="#" class="call-us d-flex align-items-center">
+								<span class="icon-phone"></span>
+								<span>0115280583</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="hero overlay" style="background-image: url(images/home1.jpg)">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6 text-left">
+					<span class="subheading-white text-white mb-3" data-aos="fade-up">Welcome to BID-C</span>
+					<h1 class="heading text-white mb-2" data-aos="fade-up">Give a helping hand to those who need it!
+					</h1>
+					<p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">We are here to empower and promote active participation of the vulnerable and disadvantaged members of the society towards self-reliance and sustainable development through capacity strengthening, education and training.</p>
+					<p data-aos="fade-up" data-aos-delay="100">
+						<a href="#about" class="btn btn-primary me-4 d-inline-flex align-items-center"> <span>about
+								us</span></a>
+						<a href="https://youtu.be/rDzFW3IHbRc"
+							class="text-white glightbox d-inline-flex align-items-center"><span
+								class="icon-play me-2"></span><span>Watch the video</span></a>
+					</p>
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div id="about" class="section">
+		<div class="container">
+			<div class="row mb-5 align-items-center justify-content-between">
+				<div class="col-lg-5" data-aos="fade-up" data-aos-delay="0">
+					<span class="subheading mb-3">Who we are</span>
+					<h2 class="heading">About Us</h2>
+					<p>Bethel Intellectual Disability
+						Centre (BID-C) is a Community Based Organisation (CBO) that was established in 2023 in western Kenya with an objective to provide health care,education and economic empowerment through giving health care serices and education to the mentally & intellectually disabled.  </p>
+				</div>
+
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+					<blockquote>
+						Mental and intellectual disabilities is pronounced and has led to exclusion and discrimination of persons with such disabilities in the society.
+					</blockquote>
+				</div>
+			</div>
+			<div class="row justify-content-between">
+				<div class="col-lg-5 pe-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+					<ul class="nav nav-pills mb-5 custom-nav-pills" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="pills-mission-tab" data-bs-toggle="pill"
+								data-bs-target="#pills-mission" type="button" role="tab" aria-controls="pills-mission"
+								aria-selected="true">Our Mission</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-values-tab" data-bs-toggle="pill"
+								data-bs-target="#pills-values" type="button" role="tab" aria-controls="pills-values"
+								aria-selected="false">Our Vision</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-history-tab" data-bs-toggle="pill"
+								data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history"
+								aria-selected="false">Our goal</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-mission" role="tabpanel"
+							aria-labelledby="pills-mission-tab">
+							<h2 class="mb-3 text-primary fw-bold">Our Mission</h2>
+							<p>To give a positive impact on lives of persons to be independent and contribute to the
+								growth of income of the country.</p>
+							<p class="mt-5">
+								<a href="contact.html" class="btn btn-primary me-4">contact us</a>
+								<a href="about.html" class="link-more">Learn More <span
+										class="icon-chevron-right"></span></a>
+							</p>
+						</div>
+						<div class="tab-pane fade" id="pills-values" role="tabpanel" aria-labelledby="pills-values-tab">
+							<h2 class="mb-3 text-primary fw-bold">Our Vision</h2>
+							<p>A centre that aims to achieve inclusion and independence. </p>
+							
+							<p class="mt-5">
+								<a href="contact.html" class="btn btn-primary me-4">Contact us </a>
+								<a href="about.html" class="link-more">Learn More <span
+										class="icon-chevron-right"></span></a>
+							</p>
+						</div>
+						<div class="tab-pane fade" id="pills-history" role="tabpanel"
+							aria-labelledby="pills-history-tab">
+
+							<h2 class="mb-3 text-primary fw-bold">Our goal</h2>
+							<p>To ensure persons with intellectual disability enjoys their human rights such as
+								education and employability.
+							</p>
+							<p class="mt-5">
+								<a href="contact.php" class="btn btn-primary me-4">Contact us</a>
+								<a href="about.php" class="link-more">Learn More <span
+										class="icon-chevron-right"></span></a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-6">
+					<div class="overlap-imgs">
+						<img src="images/US.jpg" alt="Image" class="img-fluid rounded" data-aos="fade-up"
+							data-aos="100">
+						<img src="images/WE.jpg" alt="Image" class="img-fluid rounded" data-aos="fade-up"
+							data-aos="200">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section flip-section" style="background-image: url('images/cooking-4357341_1920.jpg')">
+		<div id="aboutus" class="blob-1">
+			<img src="images/blob.png" alt="Image" class="img-f luid">
+		</div>
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-lg-7 text-center" data-aos="fade-up">
+					<span class="subheading-white mb-3 text-white">about us</span>
+					<h2 class="heading text-white">How we help</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="100">
+					<div class="card-flip">
+						<div class="flip">
+							<div class="front">
+								<!-- front content -->
+								<div class="flip-content-wrap">
+									<span class="icon-book"></span>
+									<h3>Health
+									</h3>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<div class="flip-content-wrap">
+									<h3>Health</h3>
+									<!-- <p>Psychological support is given to both caregivers and individually.</p> -->
+									<p>Physiotherapy given to persons with mobility challenge and speech imparement.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Card Flip -->
+				</div>
+				<div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="200">
+					<div class="card-flip">
+						<div class="flip">
+							<div class="front">
+								<!-- front content -->
+								<div class="flip-content-wrap">
+									<span class="icon-microphone"></span>
+									<h3>Give Education</h3>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<div class="flip-content-wrap">
+									<h3>Give Education</h3>
+									<p>A goal to be achieved once the physiotherapy has had an impact in once life.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="300">
+					<div class="card-flip">
+						<div class="flip">
+							<div class="front">
+								<!-- front content -->
+								<div class="flip-content-wrap">
+									<span class="icon-female"></span>
+									<h3>Advocacy & Cooperation
+									</h3>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<div class="flip-content-wrap">
+									<h3>Advocacy & Cooperation</h3>
+									<p>To help bridge the gap of inclusion, eliminate discrimination and achieve ones
+										rights effectively.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- <div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="400">
+					<div class="card-flip">
+						<div class="flip">
+							<div class="front">
+								<!-- front content 
+								<div class="flip-content-wrap">
+									<span class="icon-people"></span>
+									<h3>Collaboration
+									</h3>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content 
+								<div class="flip-content-wrap">
+									<h3>Collaboration</h3>
+									<p>Collaboration is essential for NGOs to reach their goals.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- 
+
+	<div class="section bg-light pt-0">
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-lg-5 mb-5" data-aos="fade-up">
+					<span style="margin:25px 0px 0px 0px  ;" class="subheading mb-1">Project Update</span>
+					<h2 class="heading mb-1">Our Projects</h2>
+					<p>Through a range of initiatives, ZICET works with local community leaders, volunteers, and
+						organisations to develop projects that contribute to the wellbeing of the people and the
+						environment. </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="projects-item bg-white">
+						<a href="#"><img src="images/fb5.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+						<div class="px-4 pb-3 pt-3">
+							<center><span class="date">2017</span></center>
+							<h3><a href="projects.html">Environmental awareness campaign on mining communities.</a></h3>
+							<p>In 2017, an environmental awareness campaign was launched in Mutare District to raise
+								awareness on responsible and sustainable mining operations</p>
+							<p><a href="projects.html" class="d-flex align-items-center more2"><span>Read More</span>
+									<span class="icon-chevron-right"></span></a></p>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="projects-item bg-white">
+						<a href="#"><img src="images/fb12.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+						<div class="px-4 pb-3 pt-3">
+							<center><span class="date">2019</span></center>
+							<h3><a href="projects.html">Nurturing sustainable peace in mining communities</a></h3>
+							<p>In 2019, a platform for dialogue was created between mining communities in Mutasa
+								District, Zimbabwe. The platform was designed to nurture sustainable peace in the mining
+								communities </p>
+							<p><a href="projects.html" class="d-flex align-items-center more2"><span>Read More</span>
+									<span class="icon-chevron-right"></span></a></p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="projects-item bg-white">
+						<a href="#"><img src="images/fb15.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+						<center><span class="date">2020</span></center>
+
+						<div class="px-4 pb-3 pt-3">
+							<h3><a href="projects.html">Environmental awareness campaigns</a></h3>
+							<p>In 2020, the Mutasa District in Zimbabwe launched an environmental awareness campaign to
+								advocate for a safe, clean and sustainable environment. The campaign was on promoting
+								waste management. <br> </p>
+							<p><a href="projects.html" class="d-flex align-items-center more2"><span>Read More</span>
+									<span class="icon-chevron-right"></span></a></p>
+
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+		</div>
+	</div>
+	 -->
+
+
+	<div class="section flip-section secondary-bg" style="background-image: url('images/19.jpg')">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 mx-auto text-center">
+					<span class="subheading-white mb-3 text-white" data-aos="fade-up">know more</span>
+					<h3 class="mb-4 heading text-white" data-aos="fade-up">Let's Help The Unfortunate People </h3>
+					<a href="about.html" class="btn btn-outline-white me-3" data-aos="fade-up" data-aos-delay="100">get
+						to know about us</a>
+					<a href="contact.html" class="btn btn-outline-white" data-aos="fade-up" data-aos-delay="200">Contact
+						us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-5" data-aos="fade-up">
+					<span class="subheading mb-3"> Our Impact</span>
+					<h2 class="heading mb-4">Get to know our impact in society</h2>
+					<p>BID-C being a community based organisation works with the local community in Kenya by providing them with access to the sustainable goals by 2030 in Access to education, health, employment, inclusivity of all kind of persons, gender equality and gender equity.</p><br><br>
+
+	 <div class="container-1">
+        <button class="btn btn-primary me-4"onclick="openModal()" id="btn-donate">Donate</button>
+        <!-- <div class="description-1">Your donation helps us make a difference.</div> -->
+      </div>
+      
+      <div id="donateModal" class="modal-1">
+        <div class="modal-content-1">
+          <span class="close-1" onclick="closeModal()">&times;</span>
+          <fieldset>
+         <legend> <h3>Fill in your donation details</h3></legend>
+          <form class="donation-form">
+
+            <label for="dname">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="demail" id="email" name="email"><br>
+
+            <label for="amount">Donation Amount:</label><br>
+            <input type="number" id="amount" name="amount" min="1"><br><br>
+
+            <button onclick="proceedToPayment()">Proceed to Payment</button>
+          </form>
+          </fieldset>
+        </div>
+      </div>
+      
+      <script>
+        function openModal() {
+          document.getElementById('donateModal').style.display = 'block';
+        }
+      
+        function closeModal() {
+          document.getElementById('donateModal').style.display = 'none';
+        }
+      
+        function proceedToPayment() {
+          // Add logic to proceed to payment
+          alert('Redirecting to payment page...');
+          // You can replace the alert with actual logic to redirect to the payment page
+        }
+      </script>
+
+
+				</div>
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+					<div class="row section-counter">
+						<div class="col-lg-6">
+							<div class="counter">
+								<i class="flaticon-social-services d-block text-secondary"></i>
+
+								<span class="number countup">10</span>+
+								<span class="d-block">Active Volunteers</span>
+							</div>
+
+							<div class="counter">
+								<i class="flaticon-flaticon-social-servicesd-block text-secondary"></i>
+								<span class="number"><span class="countup">500</span>+
+									<span class="d-block">Individuals impacted</span>
+							</div>
+
+						</div>
+						<div class="col-lg-6">
+							<div class="counter mt-5">
+								<i class="flaticon-money-donation d-block text-secondary"></i>
+								<span class="number countup">2</span>
+								<span class="d-block">Districts impacted</span>
+							</div>
+
+							<div class="counter">
+								<i class="flaticon-organs-donation d-block text-secondary"></i>
+								<span class="number countup">3</span>
+								<span class="d-block">Active donors</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- <?php 
+
+include "footer.php"; 
+
+?> -->
+
+
+	<div class="section sec-instagram pb-0">
+		<div class="container mb-5">
+			<div class="row align-items-center">
+				<div class="col-lg-3" data-aos="fade-up">
+					<span class="subheading mb-3">social media</span>
+					<h2 class="heading">We Are on social media</h2>
+				</div>
+				<div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+					<p>The Bethel Intellectual Disability Centre (BID-C) is 
+						active on <a href="https://www.instagram.com/BID-C/">Instagram</a>,<a
+							href="https://www.instagram.com/BID-C/">Twitter</a> and <a
+							href="https://www.facebook.com/BID-C">facebook</a> which features updates and stories about
+						our
+						work, including our efforts to empower and support persons with intellectual disabilities. </p>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="instagram-slider-wrap" data-aos="fade-up" data-aos-delay="200">
+			<div class="instagram-slider" id="instagram-slider">
+
+				<div class="item">
+					<a class="instagram-item">
+						<span class="icon-instagram"></span>
+						<img src="images/13.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="instagram-item">
+						<span class="icon-instagram"></span>
+						<img src="images/fb2.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="instagram-item">
+						<span class="icon-instagram"></span>
+						<img src="images/fb3.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="instagram-item">
+						<span class="icon-instagram"></span>
+						<img src="images/fb4.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="instagram-item">
+						<span class="icon-instagram"></span>
+						<img src="images/fb10.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="instagram-item">
+						<span class="icon-instagram"></span>
+						<img src="images/fb7.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="instagram-item">
+						<span class="icon-instagram"></span>
+						<img src="images/girl-852545_1920.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div> -->
+
+	<div class="site-footer">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="widget">
+						<h3>Navigation</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About us</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+							<li><a href="#">projects</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+				
+					<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="widget">
+						<h3>Work with us</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="#">Open Opportunities </a></li>
+							<li><a href="#">Volunteer </a></li>
+							<li><a href="#">Internship</a></li>
+						</ul>
+					</div> 
+
+				</div> 
+
+				<!-- /.col-lg-3 -->
+
+
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="widget">
+						<h3>connect</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="https://www.facebook.com/BID-C">facebook</a></li>
+							<li><a href="https://www.instagram.com/BID-C/">Instagram</a></li>
+							<li><a href="https://www.linkedin.com/BID-C">linkedin</a></li>
+							<li><a href="##">whatsapp</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+
+
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="widget">
+						<h3>Contact</h3>
+						<address>P.O.BOX 29817-00202,KNH,NAIROBI
+						</address>
+						<ul class="list-unstyled links mb-4">
+							<li><a href="tel:0115280583">0115280583</a></li>
+							<li><a
+									href="info@bethelintellectualdisabilitycentre.org">info@bethelintellectualdisabilitycentre.org</a>
+							</li>
+						</ul>
+
+
+
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+			</div> <!-- /.row -->
+
+
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="copyright">Copyright &copy; All Rights Reserved @ BID-C || <a href=""> Young Solutions</a>
+					</p>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</div> <!-- /.site-footer -->
+
+
+
+
+
+
+
+	<!-- Preloader -->
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border text-primary" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+
+	<script src="js/flatpickr.min.js"></script>
+	<script src="js/glightbox.min.js"></script>
+
+
+	<script src="js/aos.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/counter.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
