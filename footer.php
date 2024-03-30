@@ -8,12 +8,10 @@
 					<h2 class="heading">We Are on social media</h2>
 				</div>
 				<div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-					<p>The Bethel Intellectual Disability Centre (BID-C) is 
-						active on <a href="https://www.instagram.com/BID-C/">Instagram</a>,<a
-							href="https://www.instagram.com/BID-C/">Twitter</a> and <a
-							href="https://www.facebook.com/BID-C">facebook</a> which features updates and stories about
-						our
-						work, including our efforts to empower and support persons with intellectual disabilities. </p>
+					<p>The Bethel Mental Wellbeing Centre (BMW-C) is 
+						active on <a href="https://www.instagram.com/BMW-C/">Instagram</a>,<a
+							href="https://www.instagram.com/BMW-C/">Twitter</a> and <a
+							href="https://www.facebook.com/BMW-C">facebook</a> which features updates and stories about our work, including our efforts to empower and support persons with intellectual disabilities. </p>
 				</div>
 			</div>
 		</div>
@@ -112,9 +110,9 @@
 					<div class="widget">
 						<h3>connect</h3>
 						<ul class="list-unstyled float-left links">
-							<li><a href="https://www.facebook.com/BID-C">facebook</a></li>
-							<li><a href="https://www.instagram.com/BID-C/">Instagram</a></li>
-							<li><a href="https://www.linkedin.com/BID-C">linkedin</a></li>
+							<li><a href="https://www.facebook.com/BMW-C">facebook</a></li>
+							<li><a href="https://www.instagram.com/BMW-C/">Instagram</a></li>
+							<li><a href="https://www.linkedin.com/BMW-C">linkedin</a></li>
 							<li><a href="##">whatsapp</a></li>
 						</ul>
 					</div> <!-- /.widget -->
@@ -130,7 +128,7 @@
 						<ul class="list-unstyled links mb-4">
 							<li><a href="tel:0115280583">0115280583</a></li>
 							<li><a
-									href="info@bethelintellectualdisabilitycentre.org">info@bethelintellectualdisabilitycentre.org</a>
+									href="info@bmw.org">info@bmw.org</a>
 							</li>
 						</ul>
 
@@ -144,7 +142,7 @@
 
 			<div class="row mt-5">
 				<div class="col-12 text-center">
-					<p class="copyright">Copyright &copy; All Rights Reserved @ BID-C || <a href=""> Young Solutions</a>
+					<p class="copyright">Copyright &copy; All Rights Reserved @ BMW-C || <a href=""> Young Solutions</a>
 					</p>
 				</div>
 			</div>
