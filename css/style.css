@@ -600,6 +600,7 @@ progress {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  opacity: 100%;
   width: 16.66667%; }
 
 .col-3 {
@@ -9178,7 +9179,7 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ccc; 
-opacity: 75%;}
+opacity: 100%;}
 
   .hero, .hero > .container > .row {
     height: 100vh;
@@ -9656,11 +9657,25 @@ opacity: 75%;}
     transform: rotateY(180deg); }
 
 .card-flip,
-.front,
-.back {
+.front {
   width: 100%;
   height: 150px;
   margin-bottom: 30px; }
+
+  .front1 {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 30px; }
+  .back1 {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 30px; }
+
+  .back{
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px; 
+  }
 
 .flip {
   -webkit-transition: 0.6s;
@@ -9686,7 +9701,7 @@ opacity: 75%;}
       color: #59886b; }
 
 .front,
-.back {
+.back,.front1,.back1 {
   background: #fff;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -9694,12 +9709,12 @@ opacity: 75%;}
   top: 0;
   left: 0; }
 
-.front {
+.front,.front1 {
   z-index: 2;
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg); }
 
-.back {
+.back,.back1 {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
@@ -9770,9 +9785,14 @@ blockquote {
   background-color: rgba(89, 136, 107, 0.1);
   background-size: cover;
   background-position: center center;
+  /* max-height: 500px; */
   position: relative; }
   .flip-section .blob-1 {
     position: absolute; }
+/* 
+    .blob-1{
+      border-image-repeat: repeat;
+    } */
   .flip-section:before {
     position: absolute;
     content: "";
@@ -9950,3 +9970,5 @@ blockquote {
     color: rgba(255, 255, 255, 0.5); }
     .copyright a:hover {
       color: #fff; }
+
+      
