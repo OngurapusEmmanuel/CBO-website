@@ -4,8 +4,8 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="ZICET">
-	<link rel="shortcut icon" href="images/logo.jpg">
+	<meta name="author" content="Bethel Mental Wellbeing">
+	<link rel="shortcut icon" href="images/logo1.jpg">
 
 	<meta name="description" content="Our Projects" />
 	<meta name="keywords" content="ZICET Projects, Zivai Community Empowerment Trust Projects" />
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/glightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>projects|ZICET </title>
+	<title>projects|Bethel Mental Wellbeing</title>
 </head>
 <body>
 
@@ -43,7 +43,7 @@
 					<div class="row g-0 align-items-center">
 						<div class="col-2">
 							<a href="index.html" >
-								<img alt="Zivai Community Empowerment Trust" src="images/logo-removebg-preview.png" height="80px">
+								<img alt="Bethel Mental Wellbeing" src="images/logo1.png" height="80px">
 								
 							</a>
 						</div>
