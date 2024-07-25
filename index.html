@@ -494,47 +494,9 @@
 						 has the opportunity to thrive and contribute to society.</p><br><br>
 
 	 <div class="container-1">
-        <button class="btn btn-primary me-4"onclick="openModal()" id="btn-donate">Donate</button>
+       <a href="donate.html"> <button class="btn btn-primary me-4" id="btn-donate">Donate</button></a>
         <!-- <div class="description-1">Your donation helps us make a difference.</div> -->
       </div>
-      
-      <div id="donateModal" class="modal-1">
-        <div class="modal-content-1">
-          <span class="close-1" onclick="closeModal()">&times;</span>
-          <fieldset>
-         <legend> <h3>Fill in your donation details</h3></legend>
-          <form class="donation-form">
-
-            <label for="dname">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-
-            <label for="email">Email:</label><br>
-            <input type="demail" id="email" name="email"><br>
-
-            <label for="amount">Donation Amount:</label><br>
-            <input type="number" id="amount" name="amount" min="1"><br><br>
-
-            <button onclick="proceedToPayment()">Proceed to Payment</button>
-          </form>
-          </fieldset>
-        </div>
-      </div>
-      
-      <script>
-        function openModal() {
-          document.getElementById('donateModal').style.display = 'block';
-        }
-      
-        function closeModal() {
-          document.getElementById('donateModal').style.display = 'none';
-        }
-      
-        function proceedToPayment() {
-          // Add logic to proceed to payment
-          alert('Redirecting to payment page...');
-          // You can replace the alert with actual logic to redirect to the payment page
-        }
-      </script>
 
 
 				</div>
