@@ -9,7 +9,10 @@ body {
 }
 
 .site-nav{
-    background-color: rgb(95, 170, 170);
+    background-color: #118d53;
+}
+.nav-pad{
+    padding-right: 26dp;
 }
 
 .container {
@@ -42,7 +45,7 @@ body {
 
 .content-box, .questions-box {
     padding: 20px;
-    background: rgb(206, 191, 191);
+    background: rgb(243, 228, 228);
     border-radius: 10px;
     margin: 5px;
     flex: 1;
