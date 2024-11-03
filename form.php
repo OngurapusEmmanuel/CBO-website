@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     // Email setup
-    $to = "emmanuelongurapus@gmail.com";  // Replace with your email address
+    $to = "bethelmentalwellbeingcbo@gmail.com";  // Replace with your email address
 
     try {
         // Server settings
@@ -35,13 +35,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Port = 587; // Check your email provider for the correct port
 
         // Recipients
-        $mail->setFrom('emmanuelongurapus@gmail.com', 'Contact form');
-        $mail->addAddress('emmanuelongurapus@gmail.com');
+        $mail->setFrom($email, 'Contact form');
+        $mail->addAddress($to);
 
         // Content
         $mail->isHTML(true);
-        $mail->Subject = '$subject Contact page';
-        $mail->Body = 'Name: $name<br>Email: $email<br>Message: $message';
+        $mail->Subject = $subject;
+        $mail->Body = 'Name: $name <br> Subject: $subject <br> Message: $message';
 
         // Send the email
         $mail->send();
