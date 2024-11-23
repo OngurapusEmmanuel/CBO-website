@@ -1,18 +1,16 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
-
-use PHPMailer\PHPMailer\PHPMailer.php;
-use PHPMailer\PHPMailer\Exception.php;
-use PHPMailer\PHPMailer\SMTP.php;
-
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
 require 'vendor/autoload.php';
 
- // Initialize PHPMailer
-    $mail = new PHPMailer(true);
+// Include the config file
+$config = require 'config.php';
+
+// Initialize PHPMailer
+$mail = new PHPMailer(true);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
@@ -22,17 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     // Email setup
-    $to = "bethelmentalwellbeingcbo@gmail.com";  // Replace with your email address
+    $to = $config['to_email'];  // Get recipient email from config
 
     try {
         // Server settings
-       $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'emmanuelongurapus@gmail.com';
-    $mail->Password = 'sharonamoit';
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use 'tls' or 'ssl'
-    $mail->Port = 587; // Check your email provider for the correct port
+        $mail->isSMTP();
+        $mail->Host = $config['smtp_host'];
+        $mail->SMTPAuth = true;
+        $mail->Username = $config['email_username'];  // Get Gmail username from config
+        $mail->Password = $config['email_password'];  // Get Gmail app-specific password from config
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // 'tls' or 'ssl'
+        $mail->Port = $config['smtp_port'];  // SMTP Port
 
         // Recipients
         $mail->setFrom($email, 'Contact form');
@@ -41,19 +39,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Content
         $mail->isHTML(true);
         $mail->Subject = $subject;
-        $mail->Body = 'Name: $name <br> Subject: $subject <br> Message: $message';
+        $mail->Body = 'Name: ' . $name . '<br><br>Message: ' . $message;
 
         // Send the email
         $mail->send();
-
-        
-
-     
-
-           echo '<script>alert("Submitted successfully");</script>';
+        echo '<script>alert("Submitted successfully");</script>';
     } catch (Exception $e) {
         echo "Error sending the message. Please try again later. Error: {$mail->ErrorInfo}";
     }
 }
-
 ?>
