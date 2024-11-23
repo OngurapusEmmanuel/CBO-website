@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #215027;
+  }
+  
+  .objectives-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .objectives-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .objective {
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    box-shadow: 0 3px 5px rgba(8, 31, 10, 0.582);
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover Effect: Enhance the whole content */
+  .objective:hover {
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 6px 10px rgba(8, 31, 10, 0.7); /* Enhanced shadow */
+    background-color: #e0f7e0; /* Light green background on hover */
+    border-color: #215027; /* Dark green border on hover */
+  }
+  
+  /* Objective Slant Positions */
+  .objective:nth-child(1) {
+    transform: translateY(-20px) translateX(0);
+    animation-delay: 0.5s;
+  }
+  
+  .objective:nth-child(2) {
+    transform: translateY(-20px) translateX(20px);
+    animation-delay: 1s;
+  }
+  
+  .objective:nth-child(3) {
+    transform: translateY(-20px) translateX(40px);
+    animation-delay: 1.5s;
+  }
+  
+  .objective:nth-child(4) {
+    transform: translateY(-20px) translateX(60px);
+    animation-delay: 2s;
+  }
+  
+  .objective:nth-child(5) {
+    transform: translateY(-20px) translateX(80px);
+    animation-delay: 2.5s;
+  }
+  
+  .objective:nth-child(6) {
+    transform: translateY(-20px) translateX(100px);
+    animation-delay: 3s;
+  }
+  
+  .objective:nth-child(7) {
+    transform: translateY(-20px) translateX(120px);
+    animation-delay: 3.5s;
+  }
+  
+  .objective:nth-child(8) {
+    transform: translateY(-20px) translateX(140px);
+    animation-delay: 4s;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
