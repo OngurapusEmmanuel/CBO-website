@@ -20,6 +20,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@400;700&display=swap"
 		rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
 
 
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -46,6 +48,34 @@
   	transform: translate(0%, 10%);
   	
   }
+  .h4-featues{
+	color: rgba(16, 58, 16, 0.918);
+	font-size: 24;
+	font-weight: 800;
+display: flex;
+margin-left: 4rem;
+  }
+
+  .features-text{
+	justify-content: center;
+	align-items: center;
+	color: black;
+	animation: fadeInUp 1s ease-in-out forwards;
+  }
+
+  .section-bg{
+	opacity: 65%;
+  }
+  
+  .feature-s{
+	background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    box-shadow: 0 3px 5px rgba(8, 31, 10, 0.582);
+    animation: fadeInUp 1s ease-in-out forwards;
+	animation-delay: 0.5s;
+  }
+ 
 	</style>
 
 </head>
@@ -129,7 +159,7 @@
 		</div>
 	</div>
 
-	<div id="about" class="section">
+	<div id="about" class="section section-anim">
 		<div class="container">
 			<div class="row mb-5 align-items-center justify-content-between">
 				<div class="col-lg-5" data-aos="fade-up" data-aos-delay="0">
@@ -217,6 +247,9 @@
 	</div>
 
 
+	
+
+
 	<div class="section flip-section" style="background-image: url('images/cooking-4357341_1920.jpg')">
 		<div id="aboutus" class="blob-1">
 			<img src="images/blob.png" alt="Image" class="img-f luid">
@@ -225,99 +258,80 @@
 			<div class="row justify-content-center mb-5">
 				<div class="col-lg-7 text-center" data-aos="fade-up">
 					<span class="subheading-white mb-3 text-white">about us</span>
-					<h2 class="heading text-white">How we help</h2>
+					<h2 class="heading text-white">What we do</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="100">
-					<div class="card-flip">
-						<div class="flip">
-							<div class="front">
-								<!-- front content -->
-								<div class="flip-content-wrap">
-									<span class="icon-book"></span>
-									<h3>Health
-									</h3>
-								</div>
-							</div>
-							<div class="back">
-								<!-- back content -->
-								<div class="flip-content-wrap">
-									<h3>Health</h3>
-									<!-- <p>Psychological support is given to both caregivers and individually.</p> -->
-									<p>provides comprehensive mental health services, including community mental health talks and counseling, to promote holistic wellbeing for families, schools, and communities</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Card Flip -->
-				</div>
-				<div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="200">
-					<div class="card-flip">
-						<div class="flip">
-							<div class="front">
-								<!-- front content -->
-								<div class="flip-content-wrap">
-									<span class="icon-microphone"></span>
-									<h3>Give Education</h3>
-								</div>
-							</div>
-							<div class="back">
-								<!-- back content -->
-								<div class="flip-content-wrap">
-									<h3>Give Education</h3>
-									<p>A goal to be achieved once the physiotherapy has had an impact in once life.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="300">
-					<div class="card-flip">
-						<div class="flip">
-							<div class="front">
-								<!-- front content -->
-								<div class="flip-content-wrap">
-									<span class="icon-female"></span>
-									<h3>Advocacy & Cooperation
-									</h3>
-								</div>
-							</div>
-							<div class="back">
-								<!-- back content -->
-								<div class="flip-content-wrap">
-									<h3>Advocacy & Cooperation</h3>
-									<p>To help bridge the gap of inclusion, eliminate discrimination and achieve ones rights effectively and sensitization of persons' mental challenges to have equal rights.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				 <div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="400">
-					<div class="card-flip">
-						<div class="flip">
-							<div class="front">
-								<!-- front content  -->
-								<div class="flip-content-wrap">
-									<span class="icon-people"></span>
-									<h3>Employement
-									</h3>
-								</div>
-							</div>
-							<div class="back">
-								<!-- back content -->
-								<div class="flip-content-wrap">
-									<h3>Collaboration</h3>
-									<p>We partner with other organizations to offer employement to the mentally challenged and capable of working .</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div> 
+				
 			</div>
+			 <!-- Features Section -->
+	 <section class="py-5 bg-light secion-bg">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 ">
+                    <div class="feature-card card h-100 p-4 feature-s">
+                        <div class="card-body">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-rocket fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="h4-featues">Health</h4>
+                            <p class="text-muted features-text">Psychosocial support is given to both caregivers and individuals, group and individual counselling (support groups).
+								Physiotherapy done on persons with mental disability to improve mobility and even speech impairment. 
+								Awareness creation of Nutrition importance.
+								Operations to persons with need of correction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="feature-card card h-100 p-4  feature-s">
+                        <div class="card-body">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-code fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="h4-featues">Education</h4>
+                            <p class="text-muted">Equal education access for all special needs individuals to formal and informal education, vocational training and life skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card card h-100 p-4 feature-s">
+                        <div class="card-body">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-users fa-2x text-primary"></i>
+                            </div>
+                            <h4 class="h4-featues">Advocacy & Cooperation</h4>
+                            <p class="text-muted">Bridge the gap of inclusion and eliminate discrimination and achieve one's rights effectively.
+								Educate the public at large about the importance of mental health and deconstruct myths and beliefs about mental challenges.</p>
+                        </div>
+                    </div>
+                </div>
+				
+					<div class="col-md-4">
+						<div class="feature-card card h-100 p-4 feature-s">
+							<div class="card-body">
+								<div class="icon-box mb-4">
+									<i class="fas fa-rocket fa-2x text-primary"></i>
+								</div>
+								<h4 class="h4-featues">Employment</h4>
+								<p class="text-muted">Decent work and economic growth among everyone in the community regardless of one's mental health disability.
+									Advocate for inclusion of right based approach to reduce inequality due to mental challenges</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="feature-card card h-100 p-4 feature-s">
+							<div class="card-body">
+								<div class="icon-box mb-4">
+									<i class="fas fa-code fa-2x text-primary"></i>
+								</div>
+								<h4 class="h4-featues">Talent and Sports</h4>
+								<p class="text-muted">Supporting and empowering persons with mental diabilities to identify and nature their talents.</p>
+							</div>
+						</div>
+					</div>
+            
+        </div>
+    </section>
 		</div>
 	</div>
 
@@ -419,13 +433,10 @@
 				<div class="col-lg-5" data-aos="fade-up">
 					<span class="subheading mb-3"> Our Impact</span>
 					<h2 class="heading mb-4">Get to know our impact in society</h2>
-					<p> Bethel Mental Wellbeing is a community-based organization dedicated to
-						 advocating for mental health and wellbeing in Kakamega. We strive to empower
-						  local communities by ensuring access to key Sustainable Development Goals (SDGs) by 2030, 
-						  including quality education, healthcare, employment opportunities, and inclusivity for all individuals,
-						   particularly those with mental challenges. Our initiatives focus on promoting gender equality and equity, 
-						   ensuring that every person, regardless of their mental health status,
-						 has the opportunity to thrive and contribute to society.</p><br><br>
+					<p> Bethel Mental Wellbeing a community based organisation advocating for mental wellbeing that
+						 intends to work with the local community in Kakamega by providing them with access to the
+						  sustainable goals by 2030 in Accessing to education, health, employment, inclusivity
+						   of all kind of persons, gender equality and gender equity especially those with mental disabilities.</p><br><br>
 
 	 <div class="container-1">
        <a href="donate.html"> <button class="btn btn-primary me-4" id="btn-donate">Donate</button></a>
@@ -641,6 +652,8 @@ include "footer.php";
 			<span class="visually-hidden">Loading...</span>
 		</div>
 	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
