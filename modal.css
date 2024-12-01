@@ -11,12 +11,15 @@
 }
 
 .modal-content {
-    background: #fff;
+    background: #ffffff88;
+    color: #000000;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 80%;
-    max-width: 400px;
+    width: 85%;
+    max-width: 800px;
+    height: 50%;
+    max-height: 600px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -26,7 +29,7 @@
     right: 20px;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #333;
+    color: #0508cf;
 }
 
 .btn {
@@ -37,4 +40,15 @@
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+}
+@keyframes blink{
+    0%, 100%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.blinking{
+    animation: blink 1s infinite;
 }

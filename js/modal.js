@@ -1,5 +1,12 @@
 window.onload = function() {
     document.getElementById('popup').style.display = 'flex';
+    // const modal=document.getElementById("register-modal");
+    // modal.style.display="flex";
+
+    // //adding blinking
+    // setTimeout(()=>{
+    //     modal.classList.add("blinking");
+    // },2000);
 };
 
 function closeModal() {
@@ -11,6 +18,10 @@ function closeModal() {
 //     document.getElementById('register-modal').style.display = 'flex';
 // });
 function registerModal() {
+
+    function closeModal() {
+        document.getElementById('popup').style.display = 'none';
+    }
     document.getElementById('register-modal').style.display = 'flex';
 }
 
