@@ -33,7 +33,7 @@
 	<link rel="stylesheet" href="css/glightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/supportus.css">
-	<!-- <link rel="stylesheet" href="donate.css"> -->
+	<link rel="stylesheet" href="modal.css">
  
 	<title>Bethel Mental Wellbeing</title>
 	<style>
@@ -166,7 +166,7 @@ margin-left: 4rem;
 					<span class="subheading mb-3">Who we are</span>
 					<h2 class="heading">About Us</h2>
 					<p>Bethel Mental Welleing is a Community Based Organisation (CBO) that was established in 2023
-						 in western Kenya with an objective to put peoples' mental health forefront.
+						 in western Kenya with an objective of achieving the sustainable goal by 2030 for both persons with mental disabilities or without any disabilities.
 						 It also focuses on every person in the community that needs conselling,
 						 support groups counselling and psychosocial support involving girl talk,
 						  boy talk and teen talk  to have good mental wellbeing in the commnity. </p>
@@ -270,7 +270,7 @@ margin-left: 4rem;
             <div class="row g-4">
                 <div class="col-md-4 ">
                     <div class="feature-card card h-100 p-4 feature-s">
-                        <div class="card-body">
+                        <div class="card-body tab-pane fade show active">
                             <div class="icon-box mb-4">
                                 <i class="fas fa-rocket fa-2x text-primary"></i>
                             </div>
@@ -284,7 +284,7 @@ margin-left: 4rem;
                 </div>
                 <div class="col-md-4 ">
                     <div class="feature-card card h-100 p-4  feature-s">
-                        <div class="card-body">
+                        <div class="card-body tab-pane fade show active">
                             <div class="icon-box mb-4">
                                 <i class="fas fa-code fa-2x text-primary"></i>
                             </div>
@@ -295,7 +295,7 @@ margin-left: 4rem;
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card card h-100 p-4 feature-s">
-                        <div class="card-body">
+                        <div class="card-body tab-pane fade show active">
                             <div class="icon-box mb-4">
                                 <i class="fas fa-users fa-2x text-primary"></i>
                             </div>
@@ -308,7 +308,7 @@ margin-left: 4rem;
 				
 					<div class="col-md-4">
 						<div class="feature-card card h-100 p-4 feature-s">
-							<div class="card-body">
+							<div class="card-body tab-pane fade show active">
 								<div class="icon-box mb-4">
 									<i class="fas fa-rocket fa-2x text-primary"></i>
 								</div>
@@ -320,7 +320,7 @@ margin-left: 4rem;
 					</div>
 					<div class="col-md-4">
 						<div class="feature-card card h-100 p-4 feature-s">
-							<div class="card-body">
+							<div class="card-body tab-pane fade show active">
 								<div class="icon-box mb-4">
 									<i class="fas fa-code fa-2x text-primary"></i>
 								</div>
@@ -653,6 +653,18 @@ include "footer.php";
 		</div>
 	</div>
 
+	<div id="popup" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h1>Company Launch</h1>
+        <p>Join the launch of <strong>Bethel Mental Wellbeing</strong>!</p>
+        <p><strong>Date:</strong> [Insert Date]</p>
+        <p><strong>Time:</strong> [Insert Time]</p>
+        <p><strong>Location:</strong> [Insert Venue/Link]</p>
+        <a href="#register" class="btn">Register Now</a>
+    </div>
+</div>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
@@ -666,6 +678,9 @@ include "footer.php";
 	<script src="js/navbar.js"></script>
 	<script src="js/counter.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/modal.js"></script>
+
+
 </body>
 
 </html>

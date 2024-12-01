@@ -132,7 +132,7 @@
 <!-- Template ID:template_ejsssh5 -->
 
 			<!-- https://formsubmit.co/93d6a82725b131c644f2703513cb5d9b -->
-			<form action="form.php" method="POST" class="row justify-content-between" id="form">
+			<form  class="row justify-content-between" id="form">
 
 				<div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
 					<div class="row">
@@ -160,11 +160,49 @@
 						</div>
 
 						<script>
-    // JavaScript to reset the form after submission
-    document.getElementById('form').addEventListener('submit', function () {
-        alert('Form submitted successfully!');
-        this.reset(); // Reset the form
-    });
+// Initialize EmailJS
+emailjs.init("MFttWMHq5ph-HuHbc");
+
+// Form Submission
+document.getElementById("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+	  // Show success or error messages
+      const successMessage = document.querySelector('.success-message');
+      const errorMessage = document.querySelector('.error-message');
+
+	  // Get form values
+      const form = event.target;
+      const name = form.name.value;
+      const email = form.email.value;
+      const subject = form.subject.value;
+      const message = form.message.value;
+
+	  // Send form data using EmailJS
+      emailjs.send("service_us1uciy", "template_ejsssh5", {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+	})
+	
+
+	.then(function(response) {
+        alert("SUCCESS!", response.status, response.text);
+        successMessage.style.display = "block";
+        errorMessage.style.display = "none";
+        form.reset();
+      }, function(error) {
+        alert("FAILED...", error);
+        successMessage.style.display = "none";
+        errorMessage.style.display = "block";
+      });
+
+    // // JavaScript to reset the form after submission
+    // document.getElementById('form').addEventListener('submit', function () {
+    //     alert('Form submitted successfully!');
+    //     this.reset(); // Reset the form
+    // });
 </script>
 
 					</div>
@@ -310,9 +348,9 @@ include "footer.php";
 					<div class="widget">
 						<h3>Work with us</h3>
 						<ul class="list-unstyled float-left links">
-							<li><a href="#">Open Opportunities </a></li>
+							<li><a href="careers.html">Open Opportunities </a></li>
 							<li><a href="#">Volunteer </a></li>
-							<li><a href="#">Internship</a></li>
+							<li><a href="internships.html">Internship</a></li>
 						</ul>
 					</div> 
 
