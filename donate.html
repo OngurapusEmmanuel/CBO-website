@@ -21,6 +21,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/supportus.css">
 	<link rel="stylesheet" href="donate.css">
+
+	<style>
+		.paypal-button-container{
+			margin-top: 20px;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
     <nav class="site-nav">
@@ -129,25 +136,31 @@
 						  <label for="inputAddress">Address</label>
 						  <input type="text" class="form-control" name="address" id="inputAddress" placeholder="1234 Main St">
 						</div>
-						<div class="row">
-							
-							</div>
+						
 						<div class="form-row">
 						  <div class="row">
 							<div class="col">
-							<div class="form-group col-md-6">
-								<label for="inputAmout">Amount</label>
-								<input type="number" name="amount" class="form-control" id="inputAmout" style="width: 200px;">
-							  </div>
 							  </div>
 							
 						</div>
 						<div class="col-lg-6">
-							<input type="submit" class="btn btn-primary text-white py-3" value="Submit">
+							<script
+					 src="https://www.paypal.com/sdk/js?client-id=BAA6IlQQuhtC6pxklvNOn3vvpiHlgt5nPwqDkEi2cMPLPLP3lUqPplIsKd9aoZqCRSbHvhpethmeAY39eo&components=hosted-buttons&disable-funding=venmo&currency=USD"></script> 
+					
+					 <div class="paypal-button-container">
+					 <div id="paypal-container-MQABGVWLUSFMS"></div> 
+					</div>
+
+					<script>
+					 paypal.HostedButtons({
+						 hostedButtonId: "MQABGVWLUSFMS",
+						 }).render("#paypal-container-MQABGVWLUSFMS") 
+					</script>
 						</div>
 						</div>
 					</fieldset>  
 					</form>
+					
             </div>
             <div class="questions-box">
                 <h2>Questions</h2>
